@@ -1,14 +1,20 @@
 body{
-   background-color: aqua;
+   background-color: rgb(5, 95, 95);
 }
 
 .start{
    text-align: center;
    font-size: x-large;
    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   color: floralwhite;
 
 }
 #helloInput{
    text-align: center;
    color: aliceblue;
+}
+#quest{
+   text-align: center;
+   color: floralwhite;
+
 }
