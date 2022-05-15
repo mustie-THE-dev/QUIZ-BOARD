@@ -1,55 +1,92 @@
-*{
+* {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
 }
-body{
-   background:aqua ;
+
+body {
+   background: aqua;
 }
 
-.headertext{
+.headertext {
    position: absolute;
    top: 45%;
    left: 41%;
    transform: translate(-45% -41%);
-font-size: x-large;
-
+   font-size: x-large;
 }
 
 
 
 .start_bt,
-.infobox{
+.infobox {
    position: absolute;
    top: 60%;
    left: 53%;
-transform: translate(-60%, -53%);
+   transform: translate(-60%, -53%);
 }
- /**start button styling**/
-.start_bt button{ 
-   font-size: 20px; 
+
+/**start button styling**/
+.start_bt button {
+   font-size: 20px;
    font-weight: 400;
    color: #ec4067;
    padding: 15px 20px;
-    outline: none;
-    border: none;
-    border-radius: 6px;
-    background: #ffff;
-    cursor: pointer;
+   outline: none;
+   border: none;
+   border-radius: 6px;
+   background: #ffff;
+   cursor: pointer;
 }
-.infobox{
+
+.infobox {
    width: 500px;
    background: #ffff;
    border-radius: 5px;
 }
-.infobox .info_title{
+
+.infobox .info_title {
    height: 60px;
-   width:100%;
+   width: 100%;
    border-bottom: 1px solid lightslategray;
    display: flex;
-   align-items:center;
+   align-items: center;
    padding: 0px 35px;
-   font-weight:500px ;
+   font-weight: 700px;
+}
 
+.infobox .best_list {
+   padding: 17px 35px;
+
+}
+
+.infobox .best_list .info {
+
+   margin: 6px 0;
+   font-size: 18px;
+}
+
+.infobox .buttons {
+   height: 62px;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   padding: 0 37px;
+   border-top: 1px solid lightslategray;
+}
+
+.infobox .buttons button {
+   margin: 0 8px;
+   height: 40px;
+   width: 100px;
+   border: 1px solid transparent;
+   background-color: aqua;
+   color:rgb(255, 84, 32);
+   font-weight:600px;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 18px;
+}
+.buttons button.leave{
 
 }

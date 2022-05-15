@@ -18,6 +18,7 @@ live-link
 link=
 
 Installation
+
 For one to use the website, you will have to git clone the repository link into your visual code and run the html file.
 
 This is achieved using: GIT CLONE:https://github.com/mustie-THE-dev/QUIZ-BOARD.git
