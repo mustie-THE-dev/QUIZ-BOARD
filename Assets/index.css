@@ -7,6 +7,49 @@ body{
    background:aqua ;
 }
 
-.start_bt{
+.headertext{
+   position: absolute;
+   top: 45%;
+   left: 41%;
+   transform: translate(-45% -41%);
+font-size: x-large;
+
+}
+
+
+
+.start_bt,
+.infobox{
+   position: absolute;
+   top: 60%;
+   left: 53%;
+transform: translate(-60%, -53%);
+}
+ /**start button styling**/
+.start_bt button{ 
+   font-size: 20px; 
+   font-weight: 400;
+   color: #ec4067;
+   padding: 15px 20px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background: #ffff;
+    cursor: pointer;
+}
+.infobox{
+   width: 500px;
+   background: #ffff;
+   border-radius: 5px;
+}
+.infobox .info_title{
+   height: 60px;
+   width:100%;
+   border-bottom: 1px solid lightslategray;
+   display: flex;
+   align-items:center;
+   padding: 0px 35px;
+   font-weight:500px ;
+
 
 }
