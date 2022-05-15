@@ -1,70 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,200&display=swap');
-
-*{
-   font-family: 'Nunito', sans-serif;
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   list-style: none;
-   text-decoration: none;
-}
-
 body{
-   width: 100%;
-   height: 100vh;
-   position: relative;
-}
-
-nav{
-   display: flex;
-   width: 100%;
-   line-height: 80px;
-   padding:1px 0;
    background-color: aqua;
-
 }
 
-nav .quiz{
-   font-size:30px;
-   padding:0px 40px;
-   font-weight:400;
-}
-
-nav .quiz span{
-   color: #f18d1a;
-}
-
-nav ul{
-   text-align: right;
-   padding-right: 20px;
-   margin-left: 500px;
-}
-
-nav ul li{
-   display: inline-block;
-   margin: 3px 80px;
-}
-
-nav ul li a{
-   color: black;
-   position: relative;
-   padding: 5px 0;
-}
-
-nav ul li button{
-   background: #e0b116;
-   width:110%;
-   height: 30px;
-   border-style: none;
-   border-radius: 5px;
+.start{
+   text-align: center;
    
-}
-nav ul li a:hover{
-    color: rgb(250, 7, 19);
-    transition: 1s;
-}
-
-nav ul li button a{
-   color: rgb(19, 18, 18);
-   font-size: 18px;
 }
