@@ -11,71 +11,86 @@
     <script src="/Quiz.js"></script>
     <script src="https://kit.fontawesome.com/bea112a088.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <section class="openpage"  id="pageOne">
+    <section class="openpage" id="pageOne">
 
         <div class="headertext">
-        <h2>  Quiz<span style="color:#ec4067"> Board</span></h2>
+            <h2> Quiz<span style="color:#ec4067"> Board</span></h2>
         </div>
     </section>
 
     <div class="start_bt">
         <!--start button-->
-        <button>Start Quiz</button> 
+        <button>Start Quiz</button>
     </div>
-        <!--information box-->
-        <div class="infobox">
-            <div class="info_title">
-                <spans>Rules of the Quiz</spans>
-            </div>
-                <div class="best_list">
-                    <div class="info">1.You have <span style="color:red;">20 seconds</span> for every question</div>
-                    <div class="info">2.You cannot reselect your answers</div>
-                    <div class="info">3.You will be awarded according to correct answers you give</div>
-                    <div class="info">4.You can not exit while playing</div>
-                    <div class="info">5.No option will be available soon as time runs out</div>
+    <!--information box-->
+    <div class="infobox">
+        <div class="info_title">
+            <spans>Rules of the Quiz</spans>
+        </div>
+        <div class="best_list">
+            <div class="info">1.You have <span style="color:red;">20 seconds</span> for every question</div>
+            <div class="info">2.You cannot reselect your answers</div>
+            <div class="info">3.You will be awarded according to correct answers you give</div>
+            <div class="info">4.You can not exit while playing</div>
+            <div class="info">5.No option will be available soon as time runs out</div>
 
-                </div>
-                <div class="buttons">
-                <button class="leave">Exit Quiz</button>
-                <button class="restart">Continue</button>
+        </div>
+        <div class="buttons">
+            <button class="leave">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+    <!--Quiz Board-->
+    <div class="quizboard">
+        <header>
+            <div class="title">Quiz Board Website</div>
+            <div class="timer">
+            <div Class="time_text">Time left</div>
+            <div class="timer_sec">20</div>
+        </div>
+        </header>
+        <section>
+            <div class="que">
+                <span>What is the capital city of Rwanda?</span>
+            </div>
+            <div class="majibu">
+                <div class="jibu">
+                    <span>Kigali</span>
+                    <div class="icon tick"><i class="fa-solid fa-check"></i>
+                    </div>   
                  </div>
-             </div>
-             <!--Quiz Board-->
-             <div class="quizboard">
-                 <header>
-                     <div class="title">Quiz Board Website</div>
-                     <div Class="time_text">Time left</div>
-                     <div class="timer_sec">20</div>
-                 </header>
-                 <section>
-                     <div class="que">
-                         <span>What is the capital city of Rwanda?</span>
-                     </div>
-                     <div class="majibu">
-                         <div class="jibu">
-                             <span>Kigali</span>
-                             <div class="icon tick"><i class="fa-solid fa-check"></i>
-                            </div>
-                            <div class="jibu">
-                                <span>Khartoum</span>
-                                <div class="icon cross"><i class="fa-solid fa-times"></i>
-                               </div>
-                               <div class="jibu">
-                                <span>Cairo</span>
-                                <div class="icon"><i class="fa-solid fa-times"></i>
-                               </div>
-                               <div class="jibu">
-                                <span>Nairobi</span>
-                                <div class="icon"><i class="fa-solid fa-times"></i>
-                               </div>
-   
-   
-   
-                         </div>
-                     </div>
-                 </section>
-             </div>
+                <div class="jibu">
+                        <span>Khartoum</span>
+                        <div class="icon cross"><i class="fa-solid fa-times"></i>
+                        </div>   
+                 </div>
+                 <div class="jibu">
+                            <span>Cairo</span>
+                 </div>
+                        <div class="jibu">
+                            <span>Nairobi</span>
+                        </div>
+            
+
+
+                    </div>
+                
+        </section>
+        <!--quiz box footer-->
+        <footer>
+            <div class="total_qn">
+                <span>
+                    <p>2</p>
+                    <p>of
+                    <P>5</p>questions
+                </span>
+            </div>
+            <button class="next_btn">Next Qn</button>
+        </footer>
+    </div>
+</div>
 
 
 

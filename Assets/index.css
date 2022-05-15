@@ -19,6 +19,7 @@ body {
 
 
 .start_bt,
+.quizboard,
 .infobox {
    position: absolute;
    top: 60%;
@@ -105,3 +106,121 @@ color:rgb(255, 84, 32);
    .buttons button.restart:hover{
       color:rgb(125, 9, 148);
    }
+   .quizboard{
+      width:550px;
+      background-color: #ffff;
+      border-radius: 5px;
+   }
+   .quizboard header{
+      position: relative;
+      z-index: 99;
+      height:75px;
+      padding:0 30px;
+      background: #ffff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 5px 5px 0 0;
+      box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1);
+   }
+   .quizboard header .title{
+      font-size: 22px;
+      font-weight: 400;
+   }
+   .quizboard header .timer{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 145px;
+      height: 40px;
+      background: #f3bbc8;
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      padding: 0 8px;
+      
+   }
+   .quizboard header .time_text{
+      font-weight: 500;
+      font-size: 18px;
+      user-select: none;
+      
+   }
+   .quizboard header .timer .timer_sec{
+    font-size: 18px;
+    font-weight: 500;
+    background: #e9073b;
+    width: 45px;
+    color: aliceblue;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 5px;
+    border: 1px solid #e9073b;
+    user-select: none;
+    }
+
+   .quizboard section{
+      padding: 25px 30px 20px 30px;
+      background: #fff;
+   }
+   .quizboard section .que{
+      font-size: 25px;
+      font-weight: 600;
+   }
+   .quizboard section .majibu{
+      padding: 20px 0;
+      display: block;
+   }
+   section .majibu .jibu{
+      background: aliceblue;
+      border: 1px solid lightpink;
+      border-radius: 5px ;
+      margin-bottom: 15px;
+      padding: 8px 15px;
+      align-items: center;
+      transition: all 0.3s ease;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      font-size: 18px;
+   }
+   .majibu .jibu:last-child{
+      margin-bottom: 0px;
+   }
+   section .majibu .jibu:hover{
+      color: #4e0415;
+      background:#f3bbc8 ;
+      border-color: #e9073b;
+   }
+
+   .majibu .jibu .icon{
+      height: 25px;
+      width: 25px;
+      border: 2px solid transparent;
+      text-align: center;
+      border-radius: 50%;
+      font-size: 14px;
+      line-height: 25px;
+      pointer-events: none;
+   }
+   .majibu .jibu .icon.tick{
+      border-color: darkblue;
+      color: darkblue;
+      background: #fff;
+    }
+    .majibu .jibu .icon.cross{
+      border-color: mediumorchid;
+      color: mediumorchid;
+      background: #fff;
+    }
+    .quizboard footer{
+       height: 62px;
+       width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       padding: 0 29px;
+    }
+    .quizboard footer .total_qn span{
+       display: flex;
+
+    }
