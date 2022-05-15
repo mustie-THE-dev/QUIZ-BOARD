@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>QUIZ BOARD</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/Assets/index.css">
-        <script src="/Quiz.js"></script>
-    </head>
-    <body>
-    
-        <div class="start">
-           <h1>This is the start of the Quizpage.WELCOME!</h1>
-           <h2 id="topText">Enter your name please.</h2> <br>
-        </div>
-        <div class="hello">
-            <input id="userName"> <br> <br>
-            <button onclick="hello()"><span style="color:rgb(199, 12, 43) ;">   Submit</button>
-        
-        
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>QUIZ BOARD</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/Assets/index.css">
+    <script src="/Quiz.js"></script>
+</head>
+
+<body>
+
+    <div class="start">
+        <h1>This is the start of the Quizpage.WELCOME!</h1>
+        <h2 id="topText">Enter your name please.</h2> <br>
+    </div>
+    <div id="helloInput">
+        <input id="userName"> <br> <br>
+        <button onclick="hello()"><span style="color:rgb(199, 12, 43) ;"> Submit</button>
+
         </input>
 
+    </div>
+    <div id="quest">
+
+        <h3 id="qn">Qn1: What is the Capital city of Rwanda?</h3>
+        <div id="ansA">Kigali</div>
+        <div id="ansB">Nairobi</div>
+        <div id="ansC">Kinshasa</div>
+        <div id="ansD">Cairo</div>
+    </div>
 
 
+</body>
 
-        </div>
-        
-        
-        
-    </body>
 </html>
- 
