@@ -4,111 +4,52 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>QUIZ BOARD</title>
+    <title>Plain Qns</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/Assets/index.css">
-    <script src="/Quiz.js"></script>
-    <script src="https://kit.fontawesome.com/bea112a088.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/Assets/index2.css">
+    <script src="/Assets/js/quiz.js"></script>
 </head>
 
 <body>
-    <section class="openpage" id="pageOne">
-
-        <div class="headertext">
-            <h2> Quiz<span style="color:#ec4067"> Board</span></h2>
+    <section class="questions">
+        <div class="head">
+                <header>
+                  <div class="name">QUIZ-BOARD</div>
+                    <div class="timer">
+                        <div class="time">Time <span style="color:#ec4067"> 5 min </span></div>   
+          </div>
+            </header>
         </div>
-    </section>
-
-    <div class="start_bt">
-        <!--start button-->
-        <button>Start Quiz</button>
-    </div>
-    <!--information box-->
-    <div class="infobox">
-        <div class="info_title">
-            <spans>Rules of the Quiz</spans>
-        </div>
-        <div class="best_list">
-            <div class="info">1.You have <span style="color:red;">20 seconds</span> for every question</div>
-            <div class="info">2.You cannot reselect your answers</div>
-            <div class="info">3.You will be awarded according to correct answers you give</div>
-            <div class="info">4.You can not exit while playing</div>
-            <div class="info">5.No option will be available soon as time runs out</div>
-
-        </div>
-        <div class="buttons">
-            <button class="leave">Exit Quiz</button>
-            <button class="restart">Continue</button>
-        </div>
-    </div>
-    <!--Quiz Board-->
-    <div class="quizboard">
-        <header>
-            <div class="title">Quiz Board Website</div>
-            <div class="timer">
-            <div Class="time_text">Time left</div>
-            <div class="timer_sec">20</div>
-        </div>
-        </header>
-        <section>
-            <div class="que">
-                <span>What is the capital city of Rwanda?</span>
-            </div>
-            <div class="majibu">
-                <div class="jibu">
-                    <span>Kigali</span>
-                    <div class="icon tick"><i class="fa-solid fa-check"></i>
-                    </div>   
-                 </div>
-                <div class="jibu">
-                        <span>Khartoum</span>
-                        <div class="icon cross"><i class="fa-solid fa-times"></i>
-                        </div>   
-                 </div>
-                 <div class="jibu">
-                            <span>Cairo</span>
-                 </div>
-                        <div class="jibu">
-                            <span>Nairobi</span>
-                        </div>
-            
-
-
-                    </div>
-                
+        <form>
+          1.What is the capital city of Rwanda?<br>
+            <input type="radio" name="question1" id="incorrect"><span>Kigali</span><br> 
+            <input type="radio" name="question1" id="incorrect"><span>Ruiru</span><br>
+            <input type="radio" name="question1" id="correct1"><span>Nairobi</span> <br>
+          2.How many days make a week?<br>
+            <input type="radio" name="question2" id="incorrect"><span>3</span><br>
+            <input type="radio" name="question2" id="correct2"><span>7</span><br>
+            <input type="radio" name="question2" id="incorrect"><span>6</span><br>
+          3.Who killed Goliath in the bible?<br>
+            <input type="radio" name="question3" id="correct3"><span>David</span> <br>
+            <input type="radio" name="question3" id="incorrect"><span>Esau</span> <br>
+            <input type="radio" name="question3" id="incorrect"><span>Joshua</span><br>
+          4.How many cm make 1m?<br>
+            <input type="radio" name="question4" id="incorrect"><span>100</span> <br>
+            <input type="radio" name="question4" id="incorrect"><span>1000</span> <br>
+            <input type="radio" name="question4" id="correct4"><span>50</span> <br>
+          5.Which is the longest river in Africa?<br>
+            <input type="radio" name="question5" id="incorrect"><span>Tana</span> <br>
+            <input type="radio" name="question5" id="incorrect"><span>Nzoia</span><br>
+            <input type="radio" name="question5" id="correct5"><span>Nile</span><br> 
+        </form>
+        <!--submit button to prompt user and give results by clicking ok on the pop up message -->
+        <button id="button" type="bt1" value="submit" onclick="confirm()">Submit</button>
         </section>
-        <!--quiz box footer-->
-        <footer>
-            <div class="total_qn">
-                <span>
-                    <p>2</p>
-                    <p>of
-                    <P>5</p>questions
-                </span>
-            </div>
-            <button class="nxt_btn">Next Qn</button>
-        </footer>
-    </div>
-</div>
-<!--maajibu zone-->
-<div class="maajibu_zone">
-    <div class="icons">
-        <i class="fas fa-crown"></i>
-    </div>
-    <div class="comp_text">You have finished the Quiz</div>
-    <div class="score_text">
-      
-        <span>sorry, you got only<p>2</p><p>out of</p><p>5</p></span>
-    </div> 
-    <div class="butons">
-        <button class="quit">Quit Quiz</button>
-        <button class="restart">Replay Quiz</button>
-    </div> 
-    </div>
-</div>
-
-
+         
+        </body>
+        </html>
+                    
 
 </body>
 

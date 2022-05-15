@@ -1,317 +1,76 @@
-* {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+
+  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,200;1,300&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-   background: aqua;
-}
-
-.headertext {
-   position: absolute;
-   top: 45%;
-   left: 41%;
-   transform: translate(-45% -41%);
-   font-size: x-large;
-}
-
-
-
-.start_bt,
-.quizboard,
-.infobox,
-.maajibu_zone{
-   position: absolute;
-   top: 60%;
-   left: 53%;
-   transform: translate(-60%, -53%);
-}
-
-/**start button styling**/
-.start_bt button {
-   font-size: 20px;
-   font-weight: 400;
-   color: #ec4067;
-   padding: 15px 20px;
-   outline: none;
-   border: none;
-   border-radius: 6px;
-   background: #ffff;
-   cursor: pointer;
-}
-
-.infobox {
-   width: 500px;
-   background: #ffff;
-   border-radius: 5px;
-   display: none;
-}
-
-.infobox .info_title {
-   height: 60px;
-   width: 100%;
-   border-bottom: 1px solid lightslategray;
-   display: flex;
-   align-items: center;
-   padding: 0px 35px;
-   font-weight: 700px;
-}
-
-.infobox .best_list {
-   padding: 17px 35px;
-
-}
-
-.infobox .best_list .info {
-
-   margin: 6px 0;
-   font-size: 18px;
-}
-
-.infobox .buttons {
-   height: 62px;
-   display: flex;
-   align-items: center;
-   justify-content: flex-end;
-   padding: 0 37px;
-   border-top: 1px solid lightslategray;
-}
-
-.infobox .buttons button {
-   margin: 0 8px;
-   height: 40px;
-   width: 100px;
-   border: 1px solid transparent;
-   
-   color:rgb(133, 125, 122);
-   font-weight:600px;
-   border-radius: 5px;
-   cursor: pointer;
-   font-size: 18px;
-   transition: 0.3s ease;
-}
-.buttons button.leave{
-border-color: rgb(255, 84, 32);
-color:rgb(255, 84, 32);
-}
-.buttons button.restart{
-   border-color: rgb(255, 84, 32);
-   color:rgb(255, 84, 32);
-   background:aqua;
-   }
-   .buttons button.leave:hover{
-      color:rgb(125, 9, 148);
-
-   }
-   .buttons button.restart:hover{
-      color:rgb(125, 9, 148);
-   }
-   .quizboard{
-      width:550px;
-      background-color: #ffff;
-      border-radius: 5px;
-      display: none;
-      opacity: 0;
-      pointer-events: none;
-      transform: translate(-50%, -50%) scale(0.9);
-   }
-   .quizboard header{
-      position: relative;
-      z-index: 99;
-      height:75px;
-      padding:0 30px;
-      background: #ffff;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-radius: 5px 5px 0 0;
-      box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1);
-   }
-   .quizboard header .title{
-      font-size: 22px;
-      font-weight: 400;
-   }
-   .quizboard header .timer{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 145px;
-      height: 40px;
-      background: #f3bbc8;
-      border: 1px solid lightgray;
-      border-radius: 5px;
-      padding: 0 8px;
-      
-   }
-   .quizboard header .time_text{
-      font-weight: 500;
-      font-size: 18px;
-      user-select: none;
-      
-   }
-   .quizboard header .timer .timer_sec{
-    font-size: 18px;
-    font-weight: 500;
-    background: #e9073b;
-    width: 45px;
-    color: aliceblue;
-    text-align: center;
-    line-height: 32px;
+.start{
+    position: absolute;
+    top:390px;
+    right: 390px; 
+    width: 110px;
+    padding: 5px;
+    margin: 0 5px;
+    background:rgb(212, 219, 221) ;
     border-radius: 5px;
-    border: 1px solid #e9073b;
-    user-select: none;
-    }
-
-   .quizboard section{
-      padding: 25px 30px 20px 30px;
-      background: #fff;
-   }
-   .quizboard section .que{
-      font-size: 25px;
-      font-weight: 600;
-   }
-   .quizboard section .majibu{
-      padding: 20px 0;
-      display: block;
-   }
-   section .majibu .jibu{
-      background: aliceblue;
-      border: 1px solid lightpink;
-      border-radius: 5px ;
-      margin-bottom: 15px;
-      padding: 8px 15px;
-      align-items: center;
-      transition: all 0.3s ease;
-      display: flex;
-      justify-content: space-between;
-      cursor: pointer;
-      font-size: 18px;
-   }
-   .majibu .jibu:last-child{
-      margin-bottom: 0px;
-   }
-   section .majibu .jibu:hover{
-      color: #4e0415;
-      background:#f3bbc8 ;
-      border-color: #e9073b;
-   }
-
-   .majibu .jibu .icon{
-      height: 25px;
-      width: 25px;
-      border: 2px solid transparent;
-      text-align: center;
-      border-radius: 50%;
-      font-size: 14px;
-      line-height: 25px;
-      pointer-events: none;
-   }
-   .majibu .jibu .icon.tick{
-      border-color: darkblue;
-      color: darkblue;
-      background: #fff;
-    }
-    .majibu .jibu .icon.cross{
-      border-color: mediumorchid;
-      color: mediumorchid;
-      background: #fff;
-    }
-    .quizboard footer{
-       height: 62px;
-       width: 100%;
-       display: flex;
-       align-items: center;
-       justify-content: space-between;
-       padding: 0 29px;
-    }
-    .quizboard footer .total_qn span{
-       display: flex;
-       user-select: none;
-    }
-    footer .total_qn span p{
-       font-weight: 500;
-       padding: 0 5px;
-
-    }
-    .total_qn span p:first-child{
-       padding: 0px;
-
-    }
-    footer .nxt_btn{
-       height: 41px;
-       padding: 0 14px;
-       font-weight: 400;
-       font-size: 18px;
-       border: none;
-       outline: none;
-       background: #e9073b;
-       color: #fff;
-       border: 1px solid #e9073b;
-       border-radius: 5px;
-       cursor: pointer;
-       transition: all 0.3s ease;
-
-    }
-    footer .nxt_btn:hover{
-       background: aqua;
-
-
-    }
-    .maajibu_zone{
-       background: #fff;
-       width: 500px;
-       padding: 25px 30px;
-       border-radius: 5px;
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-       flex-direction: column;
-       text-align: center;
-       opacity: 0;
-       pointer-events: none;
-       transform: translate(-50%, -50%) scale(0.9);
-    }
-   .maajibu_zone .comp_text{
-    font-size: 20px;
-    font-weight: 400;
-
-   }
-   .maajibu_zone .icons{
-      font-size: 100px;
-      color: #e9073b;
-   }
-   .maajibu_zone .score_text span{
-    display: flex;
-    margin: 10px 0;
+    cursor: pointer;
+    font-size: large;
+}
+.rules{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.bazuu{
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 34px;
     font-size: 18px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+    border: lightgray;
+    font-size: 17px;
+}
+/*hover effect*/
+.bazuu:hover{
+    border:1px solid #72f436;
+    background: #3cf436;
+    transition: 1s;
+}
+.rules{
+    background: white;
+    border-radius: 5px;
+    width: 600px;
+}
+.details{
+    width: 100%;
+    height: 100% ;
+    align-items: center;
+    padding: 0 30px;
+    font-size: 20px;
     font-weight: 500;
-   }
-   .score_text span p{
-      font-weight: 500;
-      padding: 0 4px;
-   }
-   .maajibu_zone .butons{
-      display: flex;
-      margin: 20px 0px;
+    border-bottom: 2px solid darkgray;
+    display: flex;
 
-   }
-   .maajibu_zone .butons button{
-      margin: 0 10px;
-      height:46px;
-      padding: 0 18px;
-      border: none;
-      font-size: 18px;
-      font-weight: 500;
-      border-radius: 5px;
-      border: 1px solid #e9073b;
-      cursor: pointer;
-      transition: all 0.3s ease;
-   }
-   .butons button:hover{
-      color: rgb(80, 15, 233);
-
-   }
-
-   
-   
+}
+.det1{
+    margin:5px 0;
+    font-size: 16px;
+     
+}
+#bt1{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 30px;
+    border-top: 1px solid grey;
+    margin: 0 5px;
+    border: 1px solid whitesmoke;
+}
