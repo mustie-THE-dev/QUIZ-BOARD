@@ -20,7 +20,8 @@ body {
 
 .start_bt,
 .quizboard,
-.infobox {
+.infobox,
+.maajibu_zone{
    position: absolute;
    top: 60%;
    left: 53%;
@@ -110,6 +111,10 @@ color:rgb(255, 84, 32);
       width:550px;
       background-color: #ffff;
       border-radius: 5px;
+      display: none;
+      opacity: 0;
+      pointer-events: none;
+      transform: translate(-50%, -50%) scale(0.9);
    }
    .quizboard header{
       position: relative;
@@ -222,5 +227,91 @@ color:rgb(255, 84, 32);
     }
     .quizboard footer .total_qn span{
        display: flex;
+       user-select: none;
+    }
+    footer .total_qn span p{
+       font-weight: 500;
+       padding: 0 5px;
 
     }
+    .total_qn span p:first-child{
+       padding: 0px;
+
+    }
+    footer .nxt_btn{
+       height: 41px;
+       padding: 0 14px;
+       font-weight: 400;
+       font-size: 18px;
+       border: none;
+       outline: none;
+       background: #e9073b;
+       color: #fff;
+       border: 1px solid #e9073b;
+       border-radius: 5px;
+       cursor: pointer;
+       transition: all 0.3s ease;
+
+    }
+    footer .nxt_btn:hover{
+       background: aqua;
+
+
+    }
+    .maajibu_zone{
+       background: #fff;
+       width: 500px;
+       padding: 25px 30px;
+       border-radius: 5px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       flex-direction: column;
+       text-align: center;
+       opacity: 0;
+       pointer-events: none;
+       transform: translate(-50%, -50%) scale(0.9);
+    }
+   .maajibu_zone .comp_text{
+    font-size: 20px;
+    font-weight: 400;
+
+   }
+   .maajibu_zone .icons{
+      font-size: 100px;
+      color: #e9073b;
+   }
+   .maajibu_zone .score_text span{
+    display: flex;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+   }
+   .score_text span p{
+      font-weight: 500;
+      padding: 0 4px;
+   }
+   .maajibu_zone .butons{
+      display: flex;
+      margin: 20px 0px;
+
+   }
+   .maajibu_zone .butons button{
+      margin: 0 10px;
+      height:46px;
+      padding: 0 18px;
+      border: none;
+      font-size: 18px;
+      font-weight: 500;
+      border-radius: 5px;
+      border: 1px solid #e9073b;
+      cursor: pointer;
+      transition: all 0.3s ease;
+   }
+   .butons button:hover{
+      color: rgb(80, 15, 233);
+
+   }
+
+   
+   
