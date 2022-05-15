@@ -4,7 +4,10 @@ body{
 
 .start{
    text-align: center;
-   
+   font-size: x-large;
+   padding-top: 100px;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
 }
 .hello{
    text-align: center;
