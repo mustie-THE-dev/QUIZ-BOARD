@@ -23,7 +23,7 @@ function confirm(){
     alert("Tap Ok to view"); 
     divided = score/5;
     percentage = divided * 100;
-    //grading the student
+    //grading  student score
     if(percentage >= 80){        
         document.write("Your score is:"  + score + "  EXcellent Results");
     }
